@@ -1,0 +1,12 @@
+div.App > Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--color--blue);
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  width: 100%;
+  color: white;
+}

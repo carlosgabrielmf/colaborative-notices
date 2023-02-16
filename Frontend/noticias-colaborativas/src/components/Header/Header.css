@@ -1,0 +1,169 @@
+div.App > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(4, 100, 255, 0.628);
+  border-bottom: 1px solid var(--color--blue);
+  margin-bottom: 1rem;
+}
+
+/* TITULO */
+div.App > header > .Title {
+  text-align: center;
+  width: 6rem;
+}
+
+/* TITULO */
+div.App > header > .Title h1 {
+  margin-left: 0.3rem;
+  color: white;
+  font-family: var(--Letter--title);
+  letter-spacing: 1px;
+}
+
+/* DIV DE BOTONES HEADER */
+
+div.App > header > .Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  margin-right: 0.7rem;
+  text-align: center;
+  gap: 0.5rem;
+  height: 100%;
+  letter-spacing: 0.2px;
+}
+
+/* BOTONES DE INGRESAR Y UNIRSE */
+
+/* UNIRSE */
+div.App > header > div > .BtnSignup {
+  text-align: center;
+  width: 3.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color--green);
+  background-color: var(--color--green);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.3rem;
+}
+
+/* UNIRSE */
+div.App > header > div > .BtnSignup a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* INGRESAR */
+div.App > header > div > .BtnLogin {
+  text-align: center;
+  width: 4.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color--blue);
+  background-color: var(--color--blue);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.2rem;
+  color: white;
+}
+
+/* INGRESAR */
+div.App > header > div > .BtnLogin a {
+  color: var(--color-btn-header);
+  text-decoration: none;
+}
+
+/* BOTONES DE NOTICIA Y SALIR */
+
+/* NOTICIA */
+div.App > header > div .BtnNotice {
+  background-color: var(--color--green);
+  border: 1px solid var(--color--green);
+  width: 3.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* NOTICIA */
+div.App > header > div > .BtnNotice a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* SALIR */
+div.App > header > div > .BtnLogout {
+  text-align: center;
+  width: 3rem;
+  font-size: 1rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+
+/* SALIR */
+div.App > header > div > .BtnLogout > p {
+  color: red;
+}
+
+/* BOTON INICIO */
+div.App > header > a {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 765px) {
+  /* TITULO */
+  div.App > header > .Title h1 {
+    font-size: 2.2rem;
+  }
+
+  /* CONTENEDOR DE BOTONES */
+  div.App > header > .Buttons {
+    width: 10rem;
+    margin-right: 0.5rem;
+  }
+
+  /* INGRESAR */
+  div.App > header > div > .BtnLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  /* UNIRSE */
+  div.App > header > div > .BtnSignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  /* NOTICIA */
+  div.App > header > div > .BtnNotice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  /* SALIR */
+  div.App > header > div > .BtnLogout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+  }
+}

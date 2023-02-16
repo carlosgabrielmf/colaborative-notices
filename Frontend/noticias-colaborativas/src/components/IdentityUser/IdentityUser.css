@@ -1,0 +1,33 @@
+/* NOMBRE E IMG DEL USUARIO EN LA CABECERA */
+div.App > header > div.Identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.2rem;
+  width: 8rem;
+  height: 4rem;
+}
+
+div.App > header > div.Identity a {
+  width: 5.5rem;
+  font-size: 1rem;
+}
+div.App > header > div.Identity > .ImagenIdentity {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100%;
+}
+
+@media (min-width: 765px) {
+  div.App > header > div.Identity a {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  div.App > header > div.Identity > .ImagenIdentity {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+  }
+}

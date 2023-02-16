@@ -1,0 +1,38 @@
+{
+    "name": "noticias-colaborativas",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "initDB": "node db/initDB.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JoseOrtegaa/Noticias-Colaborativas.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JoseOrtegaa/Noticias-Colaborativas/issues"
+    },
+    "homepage": "https://github.com/JoseOrtegaa/Noticias-Colaborativas#readme",
+    "devDependencies": {
+        "eslint": "^8.16.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.16",
+        "prettier": "^2.6.2"
+    },
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-fileupload": "^1.4.0",
+        "jsonwebtoken": "^8.5.1",
+        "mysql2": "^2.3.3",
+        "nanoid": "^3.3.4",
+        "sharp": "^0.30.6"
+    }
+}

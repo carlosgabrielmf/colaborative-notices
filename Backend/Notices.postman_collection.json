@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "caa7b6d3-e257-422f-86ae-2569bd64b038",
+		"name": "Notices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Registro Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/josen/Downloads/Old-School-RuneScape.jpg"
+								},
+								{
+									"key": "name",
+									"value": "Jose",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "jose@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "default"
+								},
+								{
+									"key": "biography",
+									"value": "Hola mundo",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/user",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jose@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Noticias",
+			"item": [
+				{
+					"name": "Agregar Noticia",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU1ODE1NjY2LCJleHAiOjE2NTU5MDIwNjZ9.h3dx60_3m9Z8maeaSFPcwcEc2dQDvskhTjAXZ3ucWNw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Titulo",
+									"type": "default"
+								},
+								{
+									"key": "intro",
+									"value": "Intro",
+									"type": "default"
+								},
+								{
+									"key": "text",
+									"value": "Texto",
+									"type": "default"
+								},
+								{
+									"key": "theme",
+									"value": "Tema",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/josen/Downloads/Old-School-RuneScape.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/notice",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"notice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Noticia",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU1ODE2MTU3LCJleHAiOjE2NTU5MDI1NTd9.oarGs5dq-0t1doERj7pdjRDMkvzqBzMwWrwI2mlVS4Q",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Titulo 5000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/notice/idNotice/edit",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"notice",
+								"idNotice",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Noticia",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU1ODE1NjY2LCJleHAiOjE2NTU5MDIwNjZ9.h3dx60_3m9Z8maeaSFPcwcEc2dQDvskhTjAXZ3ucWNw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{server}}/notice/idNotice",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"notice",
+								"idNotice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Likes Noticias",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU1ODE1NjY2LCJleHAiOjE2NTU5MDIwNjZ9.h3dx60_3m9Z8maeaSFPcwcEc2dQDvskhTjAXZ3ucWNw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vote\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/notice/3/like",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"notice",
+								"3",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dislikes Notices",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU1ODE1NjY2LCJleHAiOjE2NTU5MDIwNjZ9.h3dx60_3m9Z8maeaSFPcwcEc2dQDvskhTjAXZ3ucWNw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/notice/:idNotice/dislike",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"notice",
+								":idNotice",
+								"dislike"
+							],
+							"variable": [
+								{
+									"key": "idNotice",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "localhost:4000",
+			"type": "default"
+		}
+	]
+}
